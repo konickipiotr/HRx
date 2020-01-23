@@ -1,0 +1,64 @@
+.container{
+    padding: 3px;
+    height: 98%;
+}
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 193, 199);
+    border-radius: 5px;
+  }
+  .logonav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(76, 129, 113);
+    border-radius: 5px
+  }
+  .stopka{
+    list-style-type: none;
+    margin-top: -1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 50, 51);
+    border-radius: 5px;
+  }
+  .stopka p{
+    text-align: center;
+    text-decoration: none; 
+  }
+    li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #222;
+  }
+
+.print{
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 20%;
+ margin-right: 5%;
+}
+table{
+    margin-top: 2%;
+    margin-left: 40%;
+}
+td{
+    padding-top: 5vh;   
+    }
+    td th{
+        padding-top: 5vh;     
+    }

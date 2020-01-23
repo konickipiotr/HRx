@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Tu wpisz opis zawartości strony">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="show.css">
+	<title>HRx</title>
+</head>
+
+<body>
+
+<div class= container>
+	<div class = logo>
+		<ul class = logonav>
+			<li><a href="">Home</a></li>
+		</ul>
+	</div>
+	<div class = nav>
+		<ul>
+			<li><a th:href="@{/}">Główna</a></li>
+			<li><a th:href="@{/show}">Lista pracowników</a></li>
+			<li><a th:href="@{/fill}">Dodaj pracownika</a></li>
+			<li><a th:href="@{/statistic}">Statystyki</a></li>
+		  </ul>
+    </div>
+    
+<div class = tabela>
+
+    <table>
+       <thead>
+           <tr>
+              <th>ID</th> <th>Imię</th> <th>Nazwisko</th> <th>Stanowisko</th> <th>Pensja</th> <th></th><th></th>
+           </tr>
+        </thead>
+        <tbody>
+		<tr th:each="i : ${emp}">
+			<td th:text="${i.id}"></td>
+			<td th:text="${i.firstname}"></td>
+			<td th:text="${i.lastname}"></td>
+			<td th:text="${i.position}"></td>
+			<td th:text="${i.salary}"></td>
+			<td class = "inne"><a th:href="@{'/employeeedit/' + ${i.id}}">edytuj</a></td>
+			<td class = "inne"><a th:href="@{'/employeeremove/' + ${i.id}}">usuń</a></td>
+        </tr>
+    </tbody>
+	</table>
+
+</div>
+
+	<div class = print>
+		<img src="job.png" width="150" height="150">
+	</div>
+<div>
+	<ul class = stopka>
+		<p> Autor:  Piotr Konicki (konickipiotr@gmail.com) wszelkie prawa zastrzeżone</p>
+		
+	</ul>
+</p></div>
+
+</div>
+
+
+
+</body>
+</html>

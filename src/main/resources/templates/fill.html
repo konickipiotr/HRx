@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Tu wpisz opis zawartości strony">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="fill.css">
+	<title>HRx</title>
+</head>
+
+<body>
+
+<div class= container>
+	<div class = logo>
+		<ul class = logonav>
+			<li><a th:href="@{/}">Główna</a></li>
+		</ul>
+	</div>
+	<div class = nav>
+		<ul>
+			<li><a th:href="@{/}">Główna</a></li>
+			<li><a th:href="@{/show}">Lista pracowników</a></li>
+			<li><a th:href="@{/fill}">Dodaj pracownika</a></li>
+			<li><a th:href="@{/statistic}">Statystyki</a></li>
+		  </ul>
+    </div>
+    
+<div class = pola>
+	<form th:action="@{/addemployee}" method="post">
+		<label for="firstname">Imię: </label>
+		<input type="text" id="firstname" name="firstname"><br>
+		
+		<label for="lastname">Nazwisko: </label>
+		<input type="text" id="lastname" name="lastname"><br>
+		
+		<label for="position">Stanowisko: </label>
+		<input type="text" id="position" name="position"><br>
+		
+		<label for="salary">Pensja: </label>
+		<input type="number" id="salary" name="salary" value="0"><br>
+		
+		<button type="submit">Zatrudnij</button>
+	</form>
+
+</div>
+
+	<div class = print>
+		<img src="job.png" width="150" height="150">
+	</div>
+<div>
+	<ul class = stopka>
+		<p> Autor:  Piotr Konicki (konickipiotr@gmail.com) wszelkie prawa zastrzeżone</p>
+		
+	</ul>
+</p></div>
+
+</div>
+
+
+
+</body>
+</html>

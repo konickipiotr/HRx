@@ -1,0 +1,72 @@
+.container{
+    padding: 3px;
+    height: 98%;
+}
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 193, 199);
+    border-radius: 5px;
+  }
+  .logonav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(76, 129, 113);
+    border-radius: 5px
+  }
+  .stopka{
+    list-style-type: none;
+    margin-top: 23%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 50, 51);
+    border-radius: 5px;
+  }
+  .stopka p{
+    text-align: center;
+    text-decoration: none; 
+  }
+  .dane{
+    font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 25px;
+      margin-top: 3%;
+      line-height: 250%;
+}
+    li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #222;
+  }
+.tabela{
+  display: inline-block;
+  width: 60%;
+}
+.print{
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 5%;
+ margin-right: 5%;
+}
+table { width: 550px; margin: 0 auto; text-align: left; }
+th{
+    padding-left: 2vh; 
+}
+td{
+
+  #  float: left;
+}
